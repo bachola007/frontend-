@@ -109,6 +109,11 @@
     let addressTemplate = document.querySelector('#address');
     let addressClone = document.importNode(addressTemplate.content, true);
   document.body.appendChild(addressClone);
+  $('.MyInput').change(function() {
+       alert(`This is from an Input Named  `+ $(this).attr('id'));
+       $(this).addClass('Highlight');
+     });
+     $('#myID').click(function() { alert('The element myID was clicked'); });
 </script>
 </body>
 </html>
